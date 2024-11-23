@@ -1,0 +1,83 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0;
+    background: linear-gradient(to right, #cdffd8,#94b9ff );
+    display: flex;
+    height: 130vh;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    width: 1100px;
+    height: 1100px;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+    padding: 20px;
+    background: linear-gradient(to right, #0cc0df,#ffde59 );
+    color: orange;
+    text-decoration: solid ;
+    text-shadow: 100dvh;
+    font-size: 40px;
+    text-shadow: 
+    2px 2px 0px rgb(172, 112, 0),
+    -2px 2px 0px rgb(172, 112, 0),
+    2px -2px 0px rgb(172, 112, 0),
+    -2px -2px 0px rgb(172, 112, 0);
+    position: relative;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#maze{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap:5px;
+    margin: 20px auto;
+}
+.cell{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+}
+.wall{
+    background: #333;
+}
+#commands{
+    margin-top: 20px;
+}
+#startBtn{
+    height: 50px;
+    width: 100px;
+    background-color: #0cc0df;
+    color: #FFA500;
+    border: 3px solid pink;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#startBtn:hover{
+    border-color: blue ;
+}
+.robot{
+    background: #ff9800;
+}
+button{
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}

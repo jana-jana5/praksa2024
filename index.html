@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucenje programiranja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CODE LAND</h1>
+        <button id="startBtn">Počni</button>
+    </header>
+    <main>
+        <div id="maze"></div>
+        <div id="commands">
+            <button onclick="moveForward()">Naprijed</button>
+            <button onclick="turnLeft()">Lijevo</button>
+            <button onclick="turnRight()">Desno</button>
+            <button onclick="executeCommands()">Izvrši</button>
+        </div>
+        <div id="log"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
