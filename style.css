@@ -8,6 +8,17 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+#pocetna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 1100px;
+    height: 1100px;
+}
 header{
     width: 1100px;
     height: 1100px;
@@ -59,14 +70,16 @@ header{
 }
 #commands{
     margin-top: 20px;
+    cursor: pointer;
 }
 #startBtn{
     height: 50px;
     width: 100px;
     background-color: #0cc0df;
-    color: #FFA500;
-    border: 3px solid pink;
-    border-radius: 20px;
+    color: orange;
+    border: 3px solid orange;
+    border-left-color: pink;
+    border-top-color: pink;
     font-size: 16px;
     cursor: pointer;
 }

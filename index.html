@@ -4,23 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ucenje programiranja</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="izgled.css">
 </head>
 <body>
-    <header>
-        <h1>CODE LAND</h1>
-        <button id="startBtn">Počni</button>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+   <section id="glavna">
+    <header id="uvod">
+        <h1>Code Land</h1>
+        <p>Interaktivno učenje programiranja kroz igru</p>
     </header>
     <main>
-        <div id="maze"></div>
-        <div id="commands">
-            <button onclick="moveForward()">Naprijed</button>
-            <button onclick="turnLeft()">Lijevo</button>
-            <button onclick="turnRight()">Desno</button>
-            <button onclick="executeCommands()">Izvrši</button>
-        </div>
-        <div id="log"></div>
+       <div id="instructions">
+        <h2>Instrukcije</h2>
+        <p>Pomjeraj lika pomoću strelica na tastaturi</p>
+       </div>
+       <div id="game-area">
+        <div id="character"></div>
+       </div>
+       <div id="code-editor">
+        <h2>Tvoj kod:</h2>
+        <textarea id="editor" placeholder="Upiši svoj css kod ovde"></textarea>
+       <button id="run-code">Pokreni kod</button>
+    </div>
     </main>
+   </section>
+
     <script src="script.js"></script>
 </body>
 </html>
